@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour
 {
     public float timeBetweenAttacks = 0.5f;
-    public int attackDamage = 10;
+	public int attackDamage = 10;
 
 
     Animator anim;
@@ -13,8 +13,7 @@ public class EnemyAttack : MonoBehaviour
     EnemyHealth enemyHealth;
     bool playerInRange;
     float timer;
-
-
+	
     void Awake ()
     {
         player = GameObject.FindGameObjectWithTag ("Player");
